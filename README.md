@@ -73,3 +73,7 @@ AWS_CLIENT_ID="basicPubSub"
 # Run the application
 python publisher.py
 ```
+
+# Resources
+* [AWS IoT Core Developer Guide](https://docs.aws.amazon.com/iot/latest/developerguide/what-is-aws-iot.html)
+* [AWS IoT Device SDK v2 for Python](https://github.com/aws/aws-iot-device-sdk-python-v2)
