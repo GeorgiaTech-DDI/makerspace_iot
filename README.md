@@ -1,14 +1,14 @@
 # Setup
 
 ## Setting up your AWS account
-AWS IoT is a service that supports connecting IoT devices to the cloud and sending messages with the MQTT protocol. To connect to AWS IoT from our own application, we will need to create an access key that will allow us to use the AWS IoT SDK.
+AWS IoT is a service that supports connecting IoT devices to the cloud and sending messages with the MQTT protocol. To connect to AWS IoT from our own application, you will need to create an access key that will allow us to use the AWS IoT SDK.
 
 1. Create an AWS account if you haven't already. The free tier is sufficient for this tutorial.
 2. In the AWS portal, navigate to the `IAM` page.
 3. Click `My security credentials` on the right side of the page.
 4. Under `Access keys`, click `Create access key`.
 5. If you are warned about creating a root user access key, ignore it.
-6. Once your access key and secret access key have been created, save it in a secure place. You will not be able to see the secret access key again. Downloading the keys as an `.csv` file may be helpful.
+6. Once your access key and secret access key have been created, save it in a secure place. You will not be able to see the secret access key again. Downloading the keys as a `.csv` file may be helpful.
 7. To setup the configuration files on your development machine, it is recommended to download the [AWS CLI](https://aws.amazon.com/cli/), and run `aws configure` from the terminal. When prompted for the `AWS Access Key ID` and `AWS Secret Access Key`, enter the values you had saved previously. For `Default region name`, enter `us-east-1` or the closest region to your location. For `Default output format`, enter `json`.
 ```
 $ aws configure
@@ -75,5 +75,5 @@ python publisher.py
 ```
 
 # Resources
-* [AWS IoT Core Developer Guide](https://docs.aws.amazon.com/iot/latest/developerguide/what-is-aws-iot.html)
+* [AWS IoT Core Developer Guide](https://docs.aws.amazon.com/iot/latest/developerguide/)
 * [AWS IoT Device SDK v2 for Python](https://github.com/aws/aws-iot-device-sdk-python-v2)

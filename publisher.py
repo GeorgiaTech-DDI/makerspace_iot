@@ -1,5 +1,5 @@
 from awscrt import mqtt
-from awsiot import mqtt_connection_builder
+from aws_iot_helpers import build_mqtt_connection
 import logging
 import os
 import sys
@@ -18,16 +18,6 @@ stream_handler = logging.StreamHandler()
 stream_handler.setFormatter(formatter)
 logger.setLevel(logging.DEBUG)
 logger.addHandler(stream_handler)
-
-
-# Environmental variables from .env file
-AWS_CA_FILE_PATH = os.getenv("AWS_CA_FILE_PATH")
-AWS_CERT_FILE_PATH = os.getenv("AWS_CERT_FILE_PATH")
-AWS_KEY_FILE_PATH = os.getenv("AWS_KEY_FILE_PATH")
-AWS_ENDPOINT = os.getenv("AWS_ENDPOINT")
-AWS_PORT = int(os.getenv("AWS_PORT"))
-AWS_MQTT_TOPIC = os.getenv("AWS_MQTT_TOPIC")
-AWS_CLIENT_ID = os.getenv("AWS_CLIENT_ID")
 
 
 # Callback when connection is accidentally lost
@@ -57,31 +47,6 @@ def on_resubscribe_complete(resubscribe_future):
             sys.exit(f"Server rejected resubscribe to topic: {topic}")
 
 
-def build_direct_mqtt_connection(on_connection_interrupted, on_connection_resumed):
-    mqtt_connection = mqtt_connection_builder.mtls_from_path(
-        endpoint=AWS_ENDPOINT,
-        port=AWS_PORT,
-        cert_filepath=AWS_CERT_FILE_PATH,
-        pri_key_filepath=AWS_KEY_FILE_PATH,
-        ca_filepath=AWS_CA_FILE_PATH,
-        on_connection_interrupted=on_connection_interrupted,
-        on_connection_resumed=on_connection_resumed,
-        client_id=AWS_CLIENT_ID,
-        clean_session=False,
-        keep_alive_secs=30,
-        http_proxy_options=None)
-    return mqtt_connection
-
-
-mqtt_connection = build_direct_mqtt_connection(on_connection_interrupted, on_connection_resumed)
-logger.info(f"Connecting to {AWS_ENDPOINT} with client ID '{AWS_CLIENT_ID}'")
-connect_future = mqtt_connection.connect()
-
-# Future.result() waits until a result is available
-connect_future.result()
-logger.info(f"Connected to {AWS_ENDPOINT}")
-
-
 def get_random_drill_press_data():
     '''
     Randomly generates current and RPM data
@@ -95,25 +60,50 @@ def get_random_drill_press_data():
     data = {
         "timestamp": timestamp,
         "current": current_data,
-        "rpm_data": rpm_data
+        "rpm": rpm_data
     }
     return data
 
 
-# Publish 10 test messages to AWS IoT
-for i in range(10):
-    message = get_random_drill_press_data()
-    logger.info(
-        f"Publishing message to topic '{AWS_MQTT_TOPIC}': {message}")
-    message_json = json.dumps(message)
-    mqtt_connection.publish(
-        topic=AWS_MQTT_TOPIC,
-        payload=message_json,
-        qos=mqtt.QoS.AT_LEAST_ONCE)
-    time.sleep(1)
+if __name__ == "__main__":
+    # Environmental variables from .env file
+    AWS_CA_FILE_PATH = os.getenv("AWS_CA_FILE_PATH")
+    AWS_CERT_FILE_PATH = os.getenv("AWS_CERT_FILE_PATH")
+    AWS_KEY_FILE_PATH = os.getenv("AWS_KEY_FILE_PATH")
+    AWS_ENDPOINT = os.getenv("AWS_ENDPOINT")
+    AWS_PORT = int(os.getenv("AWS_PORT"))
+    AWS_MQTT_TOPIC = os.getenv("AWS_MQTT_TOPIC")
+    AWS_CLIENT_ID = os.getenv("AWS_CLIENT_ID")
 
-# Disconnect
-logger.info("Disconnecting...")
-disconnect_future = mqtt_connection.disconnect()
-disconnect_future.result()
-logger.info("Disconnected successfully")
+    mqtt_connection = build_mqtt_connection(on_connection_interrupted,
+                                            on_connection_resumed,
+                                            endpoint=AWS_ENDPOINT,
+                                            port=AWS_PORT,
+                                            cert_filepath=AWS_CERT_FILE_PATH,
+                                            pri_key_filepath=AWS_KEY_FILE_PATH,
+                                            ca_filepath=AWS_CA_FILE_PATH,
+                                            client_id=AWS_CLIENT_ID)
+    logger.info(f"Connecting to {AWS_ENDPOINT} with client ID '{AWS_CLIENT_ID}'")
+    connect_future = mqtt_connection.connect()
+
+    # Future.result() waits until a result is available
+    connect_future.result()
+    logger.info(f"Connected to {AWS_ENDPOINT}")
+
+    # Publish 10 test messages to AWS IoT
+    for i in range(10):
+        message = get_random_drill_press_data()
+        logger.info(
+            f"Publishing message to topic '{AWS_MQTT_TOPIC}': {message}")
+        message_json = json.dumps(message)
+        mqtt_connection.publish(
+            topic=AWS_MQTT_TOPIC,
+            payload=message_json,
+            qos=mqtt.QoS.AT_LEAST_ONCE)
+        time.sleep(1)
+
+    # Disconnect
+    logger.info("Disconnecting...")
+    disconnect_future = mqtt_connection.disconnect()
+    disconnect_future.result()
+    logger.info("Disconnected successfully")
