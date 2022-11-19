@@ -1,3 +1,4 @@
+//This version of the arduino code is outdated. This code is only used for references and will not be used for the project.
 #include <ArduinoJson.h>
 
 #include <ESP8266WiFi.h>
