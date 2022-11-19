@@ -1,5 +1,6 @@
 # Setup
 
+
 ## Setting up your AWS account
 AWS IoT is a service that supports connecting IoT devices to the cloud and sending messages with the MQTT protocol. To connect to AWS IoT from our own application, you will need to create an access key that will allow us to use the AWS IoT SDK.
 
