@@ -26,21 +26,23 @@ If the connection to your WiFi network requires access to a MAC address, then th
 2. Create a file `certs.h` thats follows the code:
 Note: 
 
-<code>
+```
+//certs.h
+
 #include <\pgmspace.h\>
 
 #define SECRET
-#define THINGNAME "THING_NAME"
+<b>#define THINGNAME "THING_NAME"</b>
 
-const char WIFI_SSID[] = "WIFI_SSID";
-const char WIFI_PASSWORD[] = "WIFI_PASSWORD";
-const char AWS_IOT_ENDPOINT[] = "AWS_ENDPOINT"; //Endpoint can be found by going to AWS IoT Cube/Settings
+<b>const char WIFI_SSID[] = "WIFI_SSID";
+<b>const char WIFI_PASSWORD[] = "WIFI_PASSWORD";</b>
+/b>const char AWS_IOT_ENDPOINT[] = "AWS_ENDPOINT"; </b>//Endpoint can be found by going to AWS IoT Cube/Settings
 
 // Amazon Root CA 1
 static const char AWS_CERT_CA[] PROGMEM = R"EOF(
 -----BEGIN CERTIFICATE-----
 
-[Insert aws certification CA here]
+<b>[Insert aws certification CA here]</b>
 
 -----END CERTIFICATE-----
 )EOF";
@@ -49,7 +51,7 @@ static const char AWS_CERT_CA[] PROGMEM = R"EOF(
 static const char AWS_CERT_CRT[] PROGMEM = R"KEY(
 -----BEGIN CERTIFICATE-----
 
-[Insert aws certification]
+<b>[Insert aws certification]</b>
 
 -----END CERTIFICATE-----
 )KEY";
@@ -58,13 +60,13 @@ static const char AWS_CERT_CRT[] PROGMEM = R"KEY(
 static const char AWS_CERT_PRIVATE[] PROGMEM = R"KEY(
 -----BEGIN RSA PRIVATE KEY-----
 
-[Insert Private Certificate]
+<b>[Insert Private Certificate]</b>
 
 -----END RSA PRIVATE KEY-----
 )KEY";
-</code>
+```
 
-certs.h configuration
+3. Change the details in highlighted in bold to match your own credientials.
 
 
 
