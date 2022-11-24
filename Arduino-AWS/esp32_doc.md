@@ -68,5 +68,6 @@ static const char AWS_CERT_PRIVATE[] PROGMEM = R"KEY(
 
 3. Change the details of the code to match your credientials.
 4. Upload the .ino file and .h file into the ESP32.
+5. Check results and connections by opening the Serial Monitor.
 
 
