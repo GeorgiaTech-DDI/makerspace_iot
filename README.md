@@ -2,7 +2,7 @@
 
 The wiki provides a combination of tutorials of how to construct a Makerspace Internet of Things (MSIoT) system and also a way to store technical documentation.
 
-## [Tutorials](https://github.gatech.edu/InventionStudio/makerspace_iot/wiki/Documentation)
+## [Tutorials](https://github.gatech.edu/InventionStudio/makerspace_iot/wiki/Tutorials)
 A step-by-step introduction and instructions to get your Makerspace IoT set up.
 
 ## [Documentation](https://github.gatech.edu/InventionStudio/makerspace_iot/wiki/Documentation)
