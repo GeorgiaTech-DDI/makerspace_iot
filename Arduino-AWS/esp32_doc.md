@@ -66,7 +66,7 @@ static const char AWS_CERT_PRIVATE[] PROGMEM = R"KEY(
 )KEY";
 ```
 
-3. Change the details in highlighted in bold to match your own credientials.
-
+3. Change the details of the code to match your credientials.
+4. Upload the .ino file and .h file into the ESP32.
 
 
