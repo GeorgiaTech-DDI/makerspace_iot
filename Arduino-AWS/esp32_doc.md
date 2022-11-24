@@ -29,20 +29,20 @@ Note:
 ```
 //certs.h
 
-#include <\pgmspace.h\>
+#include <pgmspace.h>
 
 #define SECRET
-<b>#define THINGNAME "THING_NAME"</b>
+#define THINGNAME "THING_NAME"
 
-<b>const char WIFI_SSID[] = "WIFI_SSID";
-<b>const char WIFI_PASSWORD[] = "WIFI_PASSWORD";</b>
-/b>const char AWS_IOT_ENDPOINT[] = "AWS_ENDPOINT"; </b>//Endpoint can be found by going to AWS IoT Cube/Settings
+const char WIFI_SSID[] = "WIFI_SSID";
+const char WIFI_PASSWORD[] = "WIFI_PASSWORD";
+const char AWS_IOT_ENDPOINT[] = "AWS_ENDPOINT"; //Endpoint can be found by going to AWS IoT Cube/Settings
 
 // Amazon Root CA 1
 static const char AWS_CERT_CA[] PROGMEM = R"EOF(
 -----BEGIN CERTIFICATE-----
 
-<b>[Insert aws certification CA here]</b>
+[Insert aws certification CA here]
 
 -----END CERTIFICATE-----
 )EOF";
@@ -51,7 +51,7 @@ static const char AWS_CERT_CA[] PROGMEM = R"EOF(
 static const char AWS_CERT_CRT[] PROGMEM = R"KEY(
 -----BEGIN CERTIFICATE-----
 
-<b>[Insert aws certification]</b>
+[Insert aws certification]
 
 -----END CERTIFICATE-----
 )KEY";
@@ -60,7 +60,7 @@ static const char AWS_CERT_CRT[] PROGMEM = R"KEY(
 static const char AWS_CERT_PRIVATE[] PROGMEM = R"KEY(
 -----BEGIN RSA PRIVATE KEY-----
 
-<b>[Insert Private Certificate]</b>
+[Insert Private Certificate]
 
 -----END RSA PRIVATE KEY-----
 )KEY";
