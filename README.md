@@ -1,4 +1,4 @@
-# Makerspace IoT (MSIoT)
+# [Makerspace IoT (MSIoT)](https://github.gatech.edu/InventionStudio/makerspace_iot/wiki)
 ### Smart<sup>3</sup> Makerspaces VIP
 
 
