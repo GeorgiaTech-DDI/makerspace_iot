@@ -8,7 +8,7 @@ A step-by-step introduction and instructions to get your Makerspace IoT set up.
 ## [Documentation](https://github.gatech.edu/InventionStudio/makerspace_iot/wiki/Documentation)
 MSIoT documents, setups, details on API, and progress.
 
-![Flowchart projects](https://github.gatech.edu/InventionStudio/makerspace_iot/blob/main/files/flowcharts/project-flowchart.png)
+![Flowchart projects](https://github.gatech.edu/InventionStudio/makerspace_iot/blob/main/images/IoT-InventionStudioV1.png)
 ![Data Flow for MSIoT](https://github.gatech.edu/InventionStudio/makerspace_iot/blob/a71af00ac2e826b73ef5b6074486a68a7007b9a0/images/IoT-InventionStudioV1.png)
 
 ## [Additional Information](https://github.gatech.edu/InventionStudio/makerspace_iot/wiki#additional-information)
