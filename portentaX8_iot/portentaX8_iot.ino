@@ -4,7 +4,7 @@
 
 #define currentRange 20; //20A Current Rating of SCT013; Change if needed.
 #define v_ref 3.3 //Amount of voltage that the ESP32/8266 can supply.
-#define currentPin 34
+#define currentPin PA_12
 
 float readCurrentVal() {
   float currentVal = 0;
@@ -26,10 +26,20 @@ float readCurrentVal() {
 
 void setup() {
   // put your setup code here, to run once:
-  Serial.begin(9600);
+  pinMode(PA_12, INPUT);
+  Serial.println("Makerspace IoT Test");
+  Serial.begin(115200);
+
+  RPC.bind("Current", []{return readCurrentVal();});
+  Serial.println("Starting");
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
-  RPC.bind("Current", []{return readCurrentVal();});
+  Serial.print("Current = ");
+  Serial.print(readCurrentVal());
+  Serial.println(" A");
+
+  Serial.println();
+  delay(1000);
 }
