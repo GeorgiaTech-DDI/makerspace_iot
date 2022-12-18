@@ -1,12 +1,13 @@
 import asyncio
 from kasa import SmartPlug
+from kasa import Discover
+from kasa import DeviceType
 
 async def main():
-    plug = SmartPlug("127.0.0.1")
-
-    await plug.update()
-    print(plug.emeter_realtime)
-    await asyncio.sleep(0.5)
+    devices = await Discover.discover()
+    for addr, dev in devices.items():
+        await dev.update()
+        print(f"{addr} >> {dev}") #Will print out the IP address of the Smart Plug as well as the version.
 
 if __name__ == '__main__':
     asyncio.run(main())
