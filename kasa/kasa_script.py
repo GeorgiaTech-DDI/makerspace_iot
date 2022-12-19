@@ -11,7 +11,7 @@ async def main():
         await dev.update()
         print(f"{addr} >> {dev}") #Will print out the IP address of the Smart Plug as well as the version.
 
-    plug = SmartPlug("123.123.123.123") #NEED TO FILL IN IP ADDRESS OF SMART PLUG
+    plug = SmartPlug("123.123.123.123") #NEED TO FILL IN IP ADDRESS OF SMART PLUG 123.123.123.123 is used as a fill-in for now.
 
     #Check if plug is on.
     await plug.update()
