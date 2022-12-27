@@ -1,7 +1,6 @@
 import time
 from msgpackrpc import Address as RpcAddress, Client as RpcClient, error as RpcError
 
-
 # Fixed configuration parameters
 port = 8884
 publish_interval = 5
