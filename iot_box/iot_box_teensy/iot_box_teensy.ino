@@ -11,8 +11,8 @@ void loop() {
   // put your main code here, to run repeatedly:
   relayVal = analogRead(relayPin); //The voltage range must be between 0-3.3V. 
   volt = relayVal * 3.3/1023; //Conversionof relayVal range of 0-1023 to 0-3.3V.
-  Serial.println("Volt: ")
-  Serial.print(volt)
+  Serial.println("Volt: ");
+  Serial.print(volt);
   if(relayVal > 0){
     Serial.write('1'); //Relay is on == Machine circuit is on.
   }
