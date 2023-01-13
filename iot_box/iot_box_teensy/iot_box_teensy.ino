@@ -15,7 +15,7 @@ void loop() {
   Serial.println("Volt: ");
   Serial.print(volt);
   if(relayVal > 0){
-    Serial.write('1'); //Relay is on == Machine circuit is on.
+    Serial.write('1'); //Relay is on == Machine circuit is on. Serial write will transmit data via the UART pins of the Teensy.
   }
   else{
     Serial.write('0'); //Relay is off == Machine circuit is off.
