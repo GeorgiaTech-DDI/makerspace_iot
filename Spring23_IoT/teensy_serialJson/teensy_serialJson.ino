@@ -15,9 +15,12 @@ void loop() {
   
   StaticJsonDocument<200> jsonBuffer;
   
-  jsonBuffer["sct-013"]["sensor"] = "Current";
+  jsonBuffer["sct-013"]["assetID"] = coldCutSaw;
+  jsonBuffer["sct-013"]["dataItemID"] = "sct-013";
   jsonBuffer["sct-013"]["value"] = data;
-  jsonBuffer["acs"]["sensor"] = "Current";
+  
+  jsonBuffer["acs"]["assetID"] = coldCutSaw;
+  jsonBuffer["acs"]["dataItemID"] = "acs";
   jsonBuffer["acs"]["value"] = data;
 
   char buffer[100];
