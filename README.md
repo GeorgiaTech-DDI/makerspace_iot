@@ -1,13 +1,11 @@
-# [Makerspace IoT (MSIoT)](https://github.gatech.edu/InventionStudio/makerspace_iot/wiki)
+# [Makerspace IoT (MSIoT)](https://github.com/GeorgiaTech-DDI/makerspace_iot/wiki)
 
-The wiki provides a combination of tutorials of how to construct a Makerspace Internet of Things (MSIoT) system and also a way to store technical documentation.
+Makerspace IoT is a sub-project of the Smart^3 Makerspaces Vertically Integrated Project, aiming to digitalize and read machinery data from the Flowers Invention Studio. This wiki provides a live documentation of what have been done towards the Makerspace IoT project, 
 
-## [Documentation](https://github.gatech.edu/InventionStudio/makerspace_iot/wiki/Documentation)
-MSIoT documents, setups, details on API, and progress.
+## [Documentation](https://github.com/GeorgiaTech-DDI/makerspace_iot/wiki)
+MSIoT documents, setups, and details on progress.
 
-![Flowchart projects](https://github.gatech.edu/InventionStudio/makerspace_iot/blob/main/images/IoT-InventionStudioV1.png)
-![Data Flow for MSIoT](https://github.gatech.edu/InventionStudio/makerspace_iot/blob/main/images/IoT-Data-Flowchart.png)
-![Project timeline for MSIoT](https://github.gatech.edu/InventionStudio/makerspace_iot/blob/main/images/MSIoT_project_timeline.png)
+![Data Flow for MSIoT](images/IoT-Data-Flowchart.png)
 
-## [Additional Information](https://github.gatech.edu/InventionStudio/makerspace_iot/wiki#additional-information)
+## Additional Information
 [MAC Address Indentifier](https://randomnerdtutorials.com/get-change-esp32-esp8266-mac-address-arduino/)
