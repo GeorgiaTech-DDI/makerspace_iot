@@ -11,9 +11,9 @@ This wiki provides live documentation of the resources utilized in the project.
 ## [Onboarding](https://github.com/GeorgiaTech-DDI/makerspace_iot/wiki/Introduction-&-Onboarding-for-MSIoT)
 What impact does this project create? How does this contribute to the existing IoT and predictive maintenance research?
 
-➡️**Aim of the project:** Enable data collection for various machine parameters like current, vibration, and temperature in Flower Invention Studio.
+➡️**Aim of the project:** Enable data collection for various machine parameters in Flower Invention Studio.
 
-➡️**Research gap identified:** After going through various research papers we realised there was no system available which could help collect data 
+➡️**Research gap identified:** After going through various research papers we realised there was no system available which could help collect data............
 
 ➡️**Work done:** We have made an IoT infrastructure which utilizes sensors to gather data on various machine parameters like current, vibration, temperature etc. These machine parameters are constantly measured and stored in a cloud warehouse. 
 
@@ -23,8 +23,9 @@ This data stored can be utilized 2 ways:-
 
 2. **Predictive maintenance:** As discussed in the *research gap* part, in the present scenario only industries with high capital are able to utilize sensor-based predictive maintenance techniques for their machines.
 
-This is where our research project helps, now we can 
+This is where our research project helps, now we can ......
 
+[Click here](https://github.com/GeorgiaTech-DDI/makerspace_iot/wiki/Introduction-&-Onboarding-for-MSIoT) to know more about the project and onboarding details!
 
 
 ## [Documentation](https://github.com/GeorgiaTech-DDI/makerspace_iot/wiki)
