@@ -8,7 +8,7 @@ This is achieved using sensors which continuously collect data on various parame
 
 This wiki provides live documentation of the resources utilized in the project.
 
-## [Introduction](https://github.com/GeorgiaTech-DDI/makerspace_iot/wiki/Onboarding-MSIoT)
+## [Onboarding](https://github.com/GeorgiaTech-DDI/makerspace_iot/wiki/Introduction-&-Onboarding-for-MSIoT)
 MSIoT documents, setups, and details on progress.
 
 
