@@ -1,4 +1,4 @@
-![Makerspace Iot Logo](images/msiot_logo_svg.svg)
+![Makerspace Iot Logo](images/new.png)
 
 # [Makerspace IoT (MSIoT)](https://github.com/GeorgiaTech-DDI/makerspace_iot/wiki)
 
