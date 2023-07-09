@@ -11,20 +11,20 @@ This wiki provides live documentation of the resources utilized in the project.
 ## [Onboarding](https://github.com/GeorgiaTech-DDI/makerspace_iot/wiki/Introduction-&-Onboarding-for-MSIoT)
 What impact does this project create? How does this contribute to the existing IoT and predictive maintenance research?
 
-➡️**Aim of the project:** Enable data collection for various machine parameters in Flower Invention Studio.
+➡️**Aim of the project** <br /> Enable data collection for various machine parameters in Flower Invention Studio.
 
-➡️**Research gap identified:** After going through various research papers we realised there was no paper which talks about an end-to-end 
+➡️**Research gap identified** <br /> After going through various research papers we realised there was no paper which holistically combines principles of mechanical, electrical, electronics and computer science to setup predictive maintenance ...............???
 
-➡️**Work done:** We have made an IoT infrastructure which utilizes sensors to gather data on various machine parameters like current, vibration, temperature etc. These machine parameters are constantly measured and stored in a cloud warehouse. 
+➡️**Work done:** <br /> We have made an IoT infrastructure which utilizes sensors to gather data on various machine parameters like current, vibration, temperature etc. These machine parameters are constantly measured and stored in a cloud warehouse. 
 
-➡️**Impact created** 
+➡️**Impact created** <br />
 This data stored can be utilized in 2 ways:-
 1. Live visualization: An app can be created that displays a live dashboard showcasing real-time values of the current, vibration and temperature. This can be utilized in small-medium sized industrial setups which till now have not modernized their machinery. The low cost of our infrastructure can help bring these sectors online.
 
 2. **Predictive maintenance:** As discussed in the *research gap* part, in the present scenario only industries with high capital are able to utilize sensor-based predictive maintenance techniques for their machines.
 
-➡️**Result** 
-After this research project, we will have documentation that talks about an end-to-end method to enable predictive maintenance for any machine in the industry, from **sensor selection -> Cloud infrastructure -> Data collection -> Data insights**
+➡️**Result** <br />
+After this research project, we will have documentation that talks about an end-to-end method to enable predictive maintenance for any machine in the industry, from **sensor selection -> Circuitry -> Cloud infrastructure -> Data collection procedures -> Data manipulation and insights**. After reading the documentation anyone can set up a predictive maintenance infrastructure without requiring any prior experience with the same. 
 
 [Click here](https://github.com/GeorgiaTech-DDI/makerspace_iot/wiki/Introduction-&-Onboarding-for-MSIoT) to know more about the project and onboarding details!
 
