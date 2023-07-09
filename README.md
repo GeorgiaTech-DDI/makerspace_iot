@@ -13,17 +13,18 @@ What impact does this project create? How does this contribute to the existing I
 
 ➡️**Aim of the project:** Enable data collection for various machine parameters in Flower Invention Studio.
 
-➡️**Research gap identified:** After going through various research papers we realised there was no system available which could help collect data............
+➡️**Research gap identified:** After going through various research papers we realised there was no paper which talks about an end-to-end 
 
 ➡️**Work done:** We have made an IoT infrastructure which utilizes sensors to gather data on various machine parameters like current, vibration, temperature etc. These machine parameters are constantly measured and stored in a cloud warehouse. 
 
 ➡️**Impact created** 
-This data stored can be utilized 2 ways:-
+This data stored can be utilized in 2 ways:-
 1. Live visualization: An app can be created that displays a live dashboard showcasing real-time values of the current, vibration and temperature. This can be utilized in small-medium sized industrial setups which till now have not modernized their machinery. The low cost of our infrastructure can help bring these sectors online.
 
 2. **Predictive maintenance:** As discussed in the *research gap* part, in the present scenario only industries with high capital are able to utilize sensor-based predictive maintenance techniques for their machines.
 
-This is where our research project helps, now we can ......
+➡️**Result** 
+After this research project, we will have documentation that talks about an end-to-end method to enable predictive maintenance for any machine in the industry, from **sensor selection -> Cloud infrastructure -> Data collection -> Data insights**
 
 [Click here](https://github.com/GeorgiaTech-DDI/makerspace_iot/wiki/Introduction-&-Onboarding-for-MSIoT) to know more about the project and onboarding details!
 
