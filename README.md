@@ -39,8 +39,8 @@ MSIoT documents, setups, and details on progress.
 
 👨‍💻 gate.....
 
-👨‍💻 **Team Lead Analytics** <br />
-✏️ Aditya Jarial, Researcher at Georgia Tech <br />
+**Team Lead Analytics** <br />
+👨‍💻 Aditya Jarial, Researcher at Georgia Tech <br />
 📍 India <br />
 📧 mr.adityasingh99@gmail.com <br />
 🔗 www.linkedin.com/in/aditya-jarial <br />
