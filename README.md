@@ -35,7 +35,7 @@ MSIoT documents, setups, and details on progress.
 ![Data Flow for MSIoT](images/IoT-Data-Flowchart.png)
 
 
-## [Documentation](https://github.com/GeorgiaTech-DDI/makerspace_iot/wiki)
+## Point Of Contacts 
 
 **Lead** <br />
 👨‍💻 gate.....
