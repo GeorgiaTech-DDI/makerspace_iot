@@ -37,6 +37,7 @@ MSIoT documents, setups, and details on progress.
 
 ## [Documentation](https://github.com/GeorgiaTech-DDI/makerspace_iot/wiki)
 
+**Lead**
 👨‍💻 gate.....
 
 **Team Lead Analytics** <br />
