@@ -34,5 +34,17 @@ MSIoT documents, setups, and details on progress.
 
 ![Data Flow for MSIoT](images/IoT-Data-Flowchart.png)
 
+
+## [Documentation](https://github.com/GeorgiaTech-DDI/makerspace_iot/wiki)
+
+👨‍💻 gate.....
+
+👨‍💻 **Team Lead Analytics** <br />
+✏️ Aditya Jarial, Researcher at Georgia Tech <br />
+📍 India <br />
+📧 mr.adityasingh99@gmail.com <br />
+🔗 www.linkedin.com/in/aditya-jarial <br />
+
+
 ## Additional Information
 [MAC Address Indentifier](https://randomnerdtutorials.com/get-change-esp32-esp8266-mac-address-arduino/)
