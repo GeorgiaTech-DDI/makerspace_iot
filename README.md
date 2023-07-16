@@ -26,7 +26,7 @@ This data stored can be utilized in 2 ways:-
 ➡️**Result** <br />
 After this research project, we will have documentation that talks about an end-to-end method to enable predictive maintenance for any machine in the industry, from **sensor selection -> Circuitry -> Cloud infrastructure -> Data collection procedures -> Data manipulation and insights**. After reading the documentation anyone can set up a predictive maintenance infrastructure without requiring any prior experience with the same. 
 
-[**✅Click here**](https://github.com/GeorgiaTech-DDI/makerspace_iot/wiki/Introduction-&-Onboarding-for-MSIoT) **to get detailed information about the project!**
+[**✅Click here**](https://github.com/GeorgiaTech-DDI/makerspace_iot/wiki/Introduction-&-Onboarding-for-MSIoT) **to get detailed info about project goals, teams, hardware & software used and much more..!**
 
 ## [Documentation](https://github.com/GeorgiaTech-DDI/makerspace_iot/wiki)
 
