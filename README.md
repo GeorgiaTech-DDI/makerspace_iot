@@ -8,9 +8,8 @@ This is achieved using sensors which continuously collect data on various parame
 
 This wiki provides live documentation of the resources utilized in the project.
 
-## [Introduction](https://github.com/GeorgiaTech-DDI/makerspace_iot/wiki/Introduction-&-Onboarding-for-MSIoT)
-💡*What impact does this project create? How does this contribute to the existing IoT and predictive maintenance research?
-
+## [Introduction and Onboarding](https://github.com/GeorgiaTech-DDI/makerspace_iot/wiki/Introduction-&-Onboarding-for-MSIoT)
+💡*What impact does this project create? How does this contribute to the existing IoT and predictive maintenance research?*
 
 ➡️**Aim of the project** <br /> Enable data collection for various machine parameters in Flower Invention Studio.
 
@@ -27,9 +26,10 @@ This data stored can be utilized in 2 ways:-
 ➡️**Result** <br />
 After this research project, we will have documentation that talks about an end-to-end method to enable predictive maintenance for any machine in the industry, from **sensor selection -> Circuitry -> Cloud infrastructure -> Data collection procedures -> Data manipulation and insights**. After reading the documentation anyone can set up a predictive maintenance infrastructure without requiring any prior experience with the same. 
 
-
+[**✅Click here**](https://github.com/GeorgiaTech-DDI/makerspace_iot/wiki/Introduction-&-Onboarding-for-MSIoT) **to get detailed information about the project!**
 
 ## [Documentation](https://github.com/GeorgiaTech-DDI/makerspace_iot/wiki)
+
 MSIoT documents, setups, and details on progress.
 
 ![Data Flow for MSIoT](images/IoT-Data-Flowchart.png)
