@@ -43,7 +43,7 @@ MSIoT documents, setups, and details on progress.
 📧 gate.tang@gatech.edu <br />
 🔗 www.linkedin.com/in/gate-tangchartsiri/ <br />
 
-**Team Lead Analytics** <br />
+**Team Lead - Analytics** <br />
 👨‍💻 Aditya Jarial, Mechanical Engineering Researcher at Georgia Tech <br />
 📍 Gurugram, India <br />
 📧 mr.adityasingh99@gmail.com <br />
