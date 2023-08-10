@@ -38,13 +38,13 @@ MSIoT documents, setups, and details on progress.
 ## Point Of Contacts 
 
 **MSIoT Lead** <br />
-👨‍💻 Gate Tangchartsiri, Computer Engineer Undergraduate <br />
+👨‍💻 Gate Tangchartsiri (Computer Engineer Undergraduate) <br />
 📍 Atlanta, Georgia <br />
 📧 gate.tang@gatech.edu <br />
 🔗 www.linkedin.com/in/gate-tangchartsiri/ <br />
 
 **Team Lead - Analytics** <br />
-👨‍💻 Aditya Jarial, Mechanical Engineering Researcher at Georgia Tech <br />
+👨‍💻 Aditya Jarial (Mechanical Engineering Researcher at Georgia Tech) <br />
 📍 Gurugram, India <br />
 📧 mr.adityasingh99@gmail.com <br />
 🔗 www.linkedin.com/in/aditya-jarial <br />
