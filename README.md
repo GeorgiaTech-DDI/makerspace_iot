@@ -13,7 +13,7 @@ This wiki provides live documentation of the resources utilized in the project.
 
 ➡️**Aim of the project** <br /> Enable data collection for various machine parameters in Flower Invention Studio.
 
-➡️**Research gap identified** <br /> After going through various research papers we realised there was no paper which holistically combines principles of mechanical, electrical, electronics and computer science to setup predictive maintenance ...............???
+➡️**Research gap identified** <br /> After going through various research papers we realised there was no paper which holistically combines principles of mechanical, electrical, electronics and computer science to setup predictive maintenance ..............
 
 ➡️**Work done:** <br /> We have made an IoT infrastructure which utilizes sensors to gather data on various machine parameters like current, vibration, temperature etc. These machine parameters are constantly measured and stored in a cloud warehouse. 
 
