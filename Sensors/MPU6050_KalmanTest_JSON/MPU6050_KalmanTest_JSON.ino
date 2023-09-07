@@ -125,7 +125,7 @@ void loop() {
   
   timeElapsed=micros();
   
-  //Jsonifying all the data into JSON packets to be sent serially.
+  //Jsonifying all the data into JSON packets to be sent serially to BBB.
   floatJsonify("Cold_Cut_Saw_1", timeElapsed, "Kalman_Machine_Angle_Roll", KalmanAngleRoll);
   floatJsonify("Cold_Cut_Saw_1", timeElapsed, "Kalman_Machine_Angle_Pitch", KalmanAnglePitch);
   floatJsonify("Cold_Cut_Saw_1", timeElapsed, "Kalman_Machine_Acceleration_X", AccX);
