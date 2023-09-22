@@ -89,6 +89,17 @@ void floatJsonify(String assetID, int timer, String dataItemID, float sensorValu
 }
 void setup() {
   Serial.begin(57600);
+
+  Serial.print("KalmanAngleRoll");
+  Serial.print(", ");
+  Serial.print("KalmanAnglePitch");
+  Serial.print(", ");
+  Serial.print("AccX");
+  Serial.print(", ");
+  Serial.print("AccY");
+  Serial.print(", ");
+  Serial.println("AccZ");
+  
   pinMode(13, OUTPUT);
   //digitalWrite(13, HIGH);
   Wire.setClock(10000);
@@ -98,19 +109,17 @@ void setup() {
   Wire.write(0x6B);
   Wire.write(0x00);
   Wire.endTransmission();
-  for (rateCalibrationNumber=0; rateCalibrationNumber<50; rateCalibrationNumber ++) {
+  for (rateCalibrationNumber=0; rateCalibrationNumber<2000; rateCalibrationNumber ++) {
     gyro_signals();
     rateCalibrationRoll+=rateRoll;
     rateCalibrationPitch+=ratePitch;
     rateCalibrationYaw+=rateYaw;
-    Serial.println(rateCalibrationNumber);
     delay(1);
   }
-  rateCalibrationRoll/=50;
-  rateCalibrationPitch/=50;
-  rateCalibrationYaw/=50;
+  rateCalibrationRoll/=2000;
+  rateCalibrationPitch/=2000;
+  rateCalibrationYaw/=2000;
   timeElapsed=micros();
-  
 }
 
 void loop() {  
@@ -121,18 +130,29 @@ void loop() {
   kalman_1d(KalmanAngleRoll, KalmanUncertaintyAngleRoll, rateRoll, AngleRoll);
   KalmanAngleRoll=Kalman1DOutput[0]; 
   KalmanUncertaintyAngleRoll=Kalman1DOutput[1];
-    kalman_1d(KalmanAnglePitch, KalmanUncertaintyAnglePitch, ratePitch, AnglePitch);
+  kalman_1d(KalmanAnglePitch, KalmanUncertaintyAnglePitch, ratePitch, AnglePitch);
   KalmanAnglePitch=Kalman1DOutput[0]; 
   KalmanUncertaintyAnglePitch=Kalman1DOutput[1];
   
   timeElapsed=micros();
   digitalWrite(13, HIGH);
   //Jsonifying all the data into JSON packets to be sent serially to BBB.
-  floatJsonify("Band_Saw_1", timeElapsed, "Kalman_Machine_Angle_Roll", KalmanAngleRoll);
-  floatJsonify("Band_Saw_1", timeElapsed, "Kalman_Machine_Angle_Pitch", KalmanAnglePitch);
-  floatJsonify("Band_Saw_1", timeElapsed, "Kalman_Machine_Acceleration_X", AccX);
-  floatJsonify("Band_Saw_1", timeElapsed, "Kalman_Machine_Acceleration_Y", AccY);
-  floatJsonify("Band_Saw_1", timeElapsed, "Kalman_Machine_Acceleration_Z", AccZ);
+  //floatJsonify("Band_Saw_1", timeElapsed, "Kalman_Machine_Angle_Roll", KalmanAngleRoll);
+  //floatJsonify("Band_Saw_1", timeElapsed, "Kalman_Machine_Angle_Pitch", KalmanAnglePitch);
+  //floatJsonify("Band_Saw_1", timeElapsed, "Kalman_Machine_Acceleration_X", AccX);
+  //floatJsonify("Band_Saw_1", timeElapsed, "Kalman_Machine_Acceleration_Y", AccY);
+  //floatJsonify("Band_Saw_1", timeElapsed, "Kalman_Machine_Acceleration_Z", AccZ);
+  
+  Serial.print(KalmanAngleRoll);
+  Serial.print(", ");
+  Serial.print(KalmanAnglePitch);
+  Serial.print(", ");
+  Serial.print(AccX);
+  Serial.print(", ");
+  Serial.print(AccY);
+  Serial.print(", ");
+  Serial.println(AccZ);
+  
   digitalWrite(13, LOW);
   delay(1000);
   
