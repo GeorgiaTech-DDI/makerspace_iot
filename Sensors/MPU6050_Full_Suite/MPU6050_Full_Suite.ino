@@ -89,16 +89,19 @@ void floatJsonify(String assetID, int timer, float angleRoll, float anglePitch, 
   jsonBuffer["roll_angle"] = angleRoll;
   jsonBuffer["pitch_angle"] = anglePitch;
   jsonBuffer["accX"] = AccX;
-  jsonBuffer["accY"] = AccX;
-  jsonBuffer["accZ"] = AccX;
+  jsonBuffer["accY"] = AccY;
+  jsonBuffer["accZ"] = AccZ;
   jsonBuffer["temp"] = temp;
   char buffer[200];
   serializeJson(jsonBuffer, buffer);
-  Serial.println(buffer); //Sends data serially to BBB.
-  Serial.write(buffer);
+  String bufferString = buffer;
+  Serial.println(buffer);
+  //Serial.write(buffer, strlen(buffer)); //Sends data serially to BBB.
+  //Serial.write(buffer);
 }
 void setup() {
   Serial.begin(57600);
+ 
   pinMode(13, OUTPUT);
   if (!mlx.begin()) {
     while (1);
