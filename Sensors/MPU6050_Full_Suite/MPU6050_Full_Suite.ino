@@ -97,16 +97,17 @@ void floatJsonify(String assetID, int timer, float angleRoll, float anglePitch, 
   String bufferString = buffer;
   Serial.println(buffer);
   //Serial.write(buffer, strlen(buffer)); //Sends data serially to BBB.
-  //Serial.write(buffer);
+  // Serial.write(buffer);
 }
 void setup() {
   Serial.begin(57600);
- 
+  // Serial.println("This is being setup and is connected.");
   pinMode(13, OUTPUT);
   if (!mlx.begin()) {
-    while (1);
+     while (1);
   };
-  //digitalWrite(13, HIGH);
+  digitalWrite(13, HIGH);
+  // Serial.println("This is end of setup ");
   Wire.setClock(10000);
   Wire.begin();
   delay(250);
@@ -119,17 +120,18 @@ void setup() {
     rateCalibrationRoll+=rateRoll;
     rateCalibrationPitch+=ratePitch;
     rateCalibrationYaw+=rateYaw;
-    //Serial.println(rateCalibrationNumber);
+    // Serial.println(rateCalibrationNumber);
     delay(1);
   }
   rateCalibrationRoll/=50;
   rateCalibrationPitch/=50;
   rateCalibrationYaw/=50;
   timeElapsed=micros();
-  
+  // Serial.println("This is end of setup ");
 }
 
 void loop() {  
+  // Serial.println("The loop is being run");
   gyro_signals();
   rateRoll-=rateCalibrationRoll;
   ratePitch-=rateCalibrationPitch;
