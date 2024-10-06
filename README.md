@@ -36,6 +36,17 @@ MSIoT documents, setups, and details on progress.
 
 
 ## Point Of Contacts 
+**MSIoT Lead** <br />
+👨‍💻 Rahul Gupta (Computer Engineer Undergraduate) <br />
+📍 Atlanta, Georgia <br />
+📧 rgupta451@gatech.edu <br />
+🔗 https://www.linkedin.com/in/rah-gupta/ <br />
+
+**AWS Lead** <br />
+👨‍💻 Connor Priest (Computer Engineer Undergraduate) <br />
+📍 Atlanta, Georgia <br />
+📧 cpriest7@gatech.edu <br />
+🔗 https://www.linkedin.com/in/connor-priest-772954220 <br />
 
 **MSIoT Lead** <br />
 👨‍💻 Gate Tangchartsiri (Computer Engineer Undergraduate) <br />
