@@ -6,9 +6,9 @@ Makerspace IoT is a sub-project of the Smart^3 Makerspaces Vertically Integrated
 
 This is achieved using sensors which continuously collect data on various parameters (current, vibration, temperature) for a machine. The project aims to create a one-of-a-kind low-cost, scalable IoT infrastructure which aids in the **predictive maintenance** of the machinery.
 
-This wiki provides live documentation of the resources utilized in the project.
+This wiki provides more in-depth documentation of the resources utilized in the project.
 
-## [Introduction and Onboarding](https://github.com/GeorgiaTech-DDI/makerspace_iot/wiki/Introduction-&-Onboarding-for-MSIoT)
+## [Introduction and Onboarding](https://github.com/GeorgiaTech-DDI/makerspace_iot/wiki/Quickstart-Guide-(Read-me-first!))
 💡*What impact does this project create? How does this contribute to the existing IoT and predictive maintenance research?*
 
 ➡️**Aim of the project** <br /> Enable data collection for various machine parameters in Flower Invention Studio.
@@ -26,7 +26,7 @@ This data stored can be utilized in 2 ways:-
 ➡️**Result** <br />
 After this research project, we will have documentation that talks about an end-to-end method to enable predictive maintenance for any machine in the industry, from **sensor selection -> Circuitry -> Cloud infrastructure -> Data collection procedures -> Data manipulation and insights**. After reading the documentation anyone can set up a predictive maintenance infrastructure without requiring any prior experience with the same. 
 
-[**✅Click here**](https://github.com/GeorgiaTech-DDI/makerspace_iot/wiki/Introduction-&-Onboarding-for-MSIoT) **to get detailed info about project goals, teams, hardware & software used and much more..!**
+[**✅Click here**](https://github.com/GeorgiaTech-DDI/makerspace_iot/wiki/Quickstart-Guide-(Read-me-first!)) **to get a quickstart guide and detailed info about project goals, teams, hardware & software used and much more..!**
 
 ## [Documentation](https://github.com/GeorgiaTech-DDI/makerspace_iot/wiki)
 
