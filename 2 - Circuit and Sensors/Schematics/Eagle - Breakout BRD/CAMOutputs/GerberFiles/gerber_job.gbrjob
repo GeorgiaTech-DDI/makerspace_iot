@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2024-10-02T16:14:14Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.6.2"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "Rahul Gupta Breakout Board"
+        },
+        "Owner": "Kyle French <kyle.french@me.gatech.edu>",
+        "Size": {
+            "X": 77.45,
+            "Y": 45.39
+        }
+    }
+}
