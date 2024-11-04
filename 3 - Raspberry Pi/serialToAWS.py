@@ -2,6 +2,8 @@ import serial
 import json
 import time
 from AWSIoTPythonSDK.MQTTLib import AWSIoTMQTTClient
+from datetime import datetime
+import re
 
 # Set up AWS IoT Core parameters
 iot_endpoint = "IoT_CORE_ENDPOINT"
@@ -49,8 +51,8 @@ try:
         print(ser.readline())
         data = ser.readline().decode("utf-8").strip()
         
-        print('DATA')
-        print(data)
+        # print('DATA')
+        # print(data)
         
         if data:
             # Process the data (parse, manipulate, etc.)
@@ -60,7 +62,11 @@ try:
                 # print('raw data \n')
                 d = '}'
                 data = [e + d for e in data.split(d) if e]
-                dataToSend = []
+                current_datetime = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+                timestamp_pattern = r'"time_stamp":-?\d+'
+                
+                for i in range(len(data)):
+                        data[i] = re.sub(timestamp_pattern, f'"time_stamp":"{current_datetime}"', data[i])
                 for line in data:
 #               data.append(json.loads(line))
                 
